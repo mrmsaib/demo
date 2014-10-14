@@ -15,3 +15,8 @@ group :doc do
 end
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
+gem 'carrierwave'
+# fog is a cloud computing library!
+gem 'fog'
+gem 'figaro'
+
