@@ -19,4 +19,5 @@ gem 'carrierwave'
 # fog is a cloud computing library!
 gem 'fog'
 gem 'figaro'
+gem "mini_magick"
 
