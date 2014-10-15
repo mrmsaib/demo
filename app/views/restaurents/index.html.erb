@@ -24,7 +24,7 @@
         <td><%= restaurent.name %></td>
         <td><%= restaurent.address %></td>
         <td><%= restaurent.phone %></td>
-        <td><%= restaurent.website %></td>
+        <td><%= link_to restaurent.website, restaurent.website %></td>
         <td><%= link_to 'Show', restaurent, class: 'btn btn-link' %></td>
         <td><%= link_to 'Edit', edit_restaurent_path(restaurent.id), class: 'btn btn-link' %></td>
         <td><%= link_to 'Destroy', restaurent, class: 'btn btn-link', method: :delete, data: { confirm: 'هل انت متاكــــــــد؟؟؟' } %></td>
