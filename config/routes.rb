@@ -1,4 +1,5 @@
 IbnBattuta::Application.routes.draw do
+  devise_for :users
   resources :restaurents
   
   root "restaurents#index"
