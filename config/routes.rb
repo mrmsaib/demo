@@ -1,5 +1,5 @@
 IbnBattuta::Application.routes.draw do
-  resources :reviews
+  resources :reviews, except: [:show, :index]
 
   devise_for :users
   resources :restaurents
