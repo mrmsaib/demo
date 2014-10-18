@@ -1,8 +1,10 @@
 IbnBattuta::Application.routes.draw do
-  resources :reviews, except: [:show, :index]
+  
 
   devise_for :users
-  resources :restaurents
+  resources :restaurents do 
+    resources :reviews, except: [:show, :index]
+  end
   
   root "restaurents#index"
   get "pages/about"
