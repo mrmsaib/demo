@@ -20,6 +20,6 @@
   <strong>Website:</strong>
   <%= @restaurent.website %>
 </p>
-
+<%= link_to 'New Review', new_restaurent_review_path(@restaurent.id), class: 'btn btn-primary' %>
 <%= link_to 'Edit', edit_restaurent_path(@restaurent), calss: 'btn btn-link' %> |
 <%= link_to 'Back', restaurents_path, class: 'btn btn-link' %>
