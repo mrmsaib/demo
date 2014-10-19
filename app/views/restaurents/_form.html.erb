@@ -1,7 +1,9 @@
 <%= form_for(@restaurent, :html => {multipart: true}) do |f| %>
   <% if @restaurent.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@restaurent.errors.count, "error") %> prohibited this restaurent from being saved:</h2>
+    <div id="error_explanation" class= "alert alert-danger alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		
+      <h4><%= pluralize(@restaurent.errors.count, "error") %> prohibited this restaurent from being saved:</h4>
 
       <ul>
 				<%# @restaurent.errors.full_message_to.sentence.each do |msg| %>
@@ -14,7 +16,7 @@
 
   <div class="form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name, class: 'form-control' %>
+    <%= f.text_field :name, class: 'form-control', placeholder: 'Ali Baba' %>
   </div>
   <div class="form-group">
     <%= f.label :address %><br>
