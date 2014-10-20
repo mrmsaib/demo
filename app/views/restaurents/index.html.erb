@@ -41,5 +41,7 @@
 
 <br>
 
+<% if user_signed_in? && current_user.admin? %>
 <%= link_to 'New Restaurent', new_restaurent_path, class: 'btn btn-link' %>
+<% end %>
 <%= image_tag 'https://s3.amazonaws.com/dmomohammad/uploads/restaurent/image/3/happy_footer.png' %>
